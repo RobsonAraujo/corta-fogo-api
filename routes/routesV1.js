@@ -22,6 +22,6 @@ router.post("/login", controllers.userController.login);
 router.post("/register", controllers.userController.register);
 
 // Image
-router.get("/classifyImage", controllers.classifyController.classifyImage);
+router.post("/classifyImage", {}, controllers.classifyController.classifyImage);
 
 module.exports = router;
