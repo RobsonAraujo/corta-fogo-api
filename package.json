@@ -1,0 +1,39 @@
+{
+  "name": "noderest",
+  "version": "1.0.0",
+  "description": "Project base in nodejs with express to build REST api fast",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon index.js",
+    "start-prod": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apiREST",
+    "es6",
+    "node"
+  ],
+  "author": "Robson Araujo Carmo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "express": "^4.16.3",
+    "express-validator": "^5.2.0",
+    "ibm-watson": "^5.6.0",
+    "jsonwebtoken": "^8.2.2",
+    "knex": "^0.14.6",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "watson-developer-cloud": "^4.0.1",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.4"
+  }
+}

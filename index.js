@@ -1,0 +1,8 @@
+const app = require('./config/expressConfig')()
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+    console.log(`server is running in port: `, port)
+})
+
+

@@ -1,0 +1,8 @@
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:34:28 +0000] \"GET /classifyImage HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:34:28.162Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:34:37 +0000] \"POST /classifyImage HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:34:37.748Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:34:52 +0000] \"POST /classifyImage HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:34:52.987Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:35:07 +0000] \"POST /classifyImage HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:35:07.147Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:35:20 +0000] \"GET /example HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:35:20.602Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:35:21 +0000] \"GET /example HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:35:21.941Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:36:47 +0000] \"GET /example HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:36:47.665Z"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [01/Aug/2020:00:36:54 +0000] \"GET /example HTTP/1.1\" 404 47\n","timestamp":"2020-08-01T00:36:54.641Z"}
