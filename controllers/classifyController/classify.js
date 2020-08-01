@@ -1,5 +1,6 @@
 const winston = require("winston");
 const ibmCloud = require("../../config/ibmCloud");
+const { v4: uuidv4 } = require("uuid");
 
 const path = require("path");
 const fs = require("fs");
@@ -9,7 +10,7 @@ const VisualRecognitionV3 = require("ibm-watson/visual-recognition/v3");
 const { IamAuthenticator } = require("ibm-watson/auth");
 
 exports.classifyImage = function (req, res) {
-  const { message } = req.body;
+  const { file } = req.body;
 
   const visualRecognition = new VisualRecognitionV3({
     version: ibmCloud.version,
@@ -19,8 +20,19 @@ exports.classifyImage = function (req, res) {
     url:
       "https://api.us-south.visual-recognition.watson.cloud.ibm.com/instances/8c23f66a-010b-4c4d-bd73-cad651b1e049",
   });
+
+  const decodedFile = new Buffer(file, "base64");
+
+  const uuidGenerated = uuidv4();
+  const pathToSave = tmpFolder + "/" + uuidGenerated + ".jpg";
+
+  fs.writeFile(pathToSave, decodedFile, (err) => {
+    if (err) throw err;
+    console.log("The file has been saved!");
+  });
+
   const classifyParams = {
-    imagesFile: fs.createReadStream(`${tmpFolder}/fire.jpg`),
+    imagesFile: fs.createReadStream(decodedFile),
     owners: ["me"],
     threshold: 0.6,
   };

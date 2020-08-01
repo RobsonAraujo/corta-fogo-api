@@ -30,6 +30,8 @@
     "mysql2": "^1.5.3",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "random-hash": "^4.0.1",
+    "uuid": "^8.3.0",
     "watson-developer-cloud": "^4.0.1",
     "winston": "^2.4.2"
   },
