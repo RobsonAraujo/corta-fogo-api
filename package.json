@@ -23,7 +23,7 @@
     "express": "^4.16.3",
     "express-validator": "^5.2.0",
     "ibm-watson": "^5.6.0",
-    "jsonwebtoken": "^8.2.2",
+    "jsonwebtoken": "^9.0.0",
     "knex": "^0.14.6",
     "lodash": "^4.17.10",
     "morgan": "^1.9.0",
